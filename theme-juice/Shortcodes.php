@@ -32,12 +32,12 @@ class Shortcodes {
         $options = array_merge( array(
             "accordion" => true,
             "colors" => true,
-            "column" => true,
             "button" => true,
             "fonts" => true,
             "video" => true,
             "staff" => true,
             "bio" => true,
+            "col" => true,
             "map" => true,
         ), $options );
 

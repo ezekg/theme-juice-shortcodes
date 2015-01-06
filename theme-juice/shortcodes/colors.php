@@ -19,7 +19,7 @@ if ( file_exists( $_file = get_template_directory() . "/assets/json/colors.json"
 
     /**
      * Loop through color map and create a shortcode with 'shade' atts
-     *   for each shade specified for the particular color.
+     *  for each shade specified for the particular color.
      */
     foreach ( $colors as $color => $shades ) {
 
