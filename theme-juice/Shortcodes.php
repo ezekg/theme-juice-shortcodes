@@ -14,8 +14,6 @@ namespace ThemeJuice;
  */
 class Shortcodes {
 
-    // class_exists('\\Foo\\Bar')
-
     /**
      * @var {Array} - Array that contains theme assets
      */
