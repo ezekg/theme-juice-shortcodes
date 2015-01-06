@@ -15,14 +15,14 @@ namespace ThemeJuice;
 class Shortcodes {
 
     /**
-     * @var {Array} - Array that contains theme assets
+     * @var {Array} - Array that contains shortcodes to register
      */
     public $shortcodes;
 
     /**
      * Constructor
      *
-     * @param {Array} $options - Array that contains shortcodes to register
+     * @param {Array} $options - Array that contains shortcodes
      */
     public function __construct( $options = array() ) {
 
