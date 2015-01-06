@@ -37,7 +37,7 @@ class Shortcodes {
             "bio" => true,
             "col" => true,
             "map" => true,
-        ), $options );
+        ), $options() );
 
         // Set shortcodes, discald false values, grab keys
         $this->shortcodes = array_keys( array_filter( $options ) );
