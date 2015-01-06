@@ -66,13 +66,10 @@ class Shortcodes {
      */
     public function register_shortcode( $shortcode ) {
 
-        // Make sure shortcode doesn't already exist
+        // Make sure shortcode doesn't already exist, and that the file itself
+        //  exists. If we're all good, then include it.
         if ( ! shortcode_exists( $shortcode ) && file_exists( $_file = __DIR__ . "/shortcodes/$shortcode.php" ) ) {
-
-            // Import contents of shortcode within closure
-            add_shortcode( $shortcode, function() use ( $_file ) {
-                include $_file;
-            });
+            include $_file;
         }
     }
 }
