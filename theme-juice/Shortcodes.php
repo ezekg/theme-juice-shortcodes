@@ -29,19 +29,17 @@ class Shortcodes {
     public function __construct( $options = array() ) {
 
         // Merge new options with defaults
-        if ( ! empty( $options ) ) {
-            $options = array_merge( array(
-                "accordion" => true,
-                "colors" => true,
-                "column" => true,
-                "button" => true,
-                "fonts" => true,
-                "video" => true,
-                "staff" => true,
-                "bio" => true,
-                "map" => true,
-            ), $options );
-        }
+        $options = array_merge( array(
+            "accordion" => true,
+            "colors" => true,
+            "column" => true,
+            "button" => true,
+            "fonts" => true,
+            "video" => true,
+            "staff" => true,
+            "bio" => true,
+            "map" => true,
+        ), $options );
 
         // Set shortcodes, discald false values, grab keys
         $this->shortcodes = array_keys( array_filter( $options ) );
@@ -51,7 +49,7 @@ class Shortcodes {
 
         // Add shortcodes
         if ( ! empty( $self->shortcodes ) ) {
-            add_action( "init", function() use ( $self ) {
+            add_action( "init", function() use ( &$self ) {
                 foreach ( $self->shortcodes as $shortcode ) {
                     $self->register_shortcode( $shortcode );
                 }
