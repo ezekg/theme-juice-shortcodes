@@ -58,7 +58,7 @@ class Shortcodes {
     /**
      * Register shortcode
      *
-     * @param {String} $handle - The name of the shortcode to register
+     * @param {String} $shortcode - The name of the shortcode to register
      *
      * @return {Void}
      */
