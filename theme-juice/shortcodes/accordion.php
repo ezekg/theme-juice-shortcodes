@@ -25,14 +25,17 @@ add_shortcode( "accordion", function( $atts, $content = null ) {
 
     $buffer[] = "<div class='accordion__wrapper'>";
     $buffer[] = "<div class='accordion'>";
+
     if ( $title ) {
         $buffer[] = "<h4 class='accordion__heading'>$title<i class='accordion__hook fa fa-angle-down'></i></h4>";
     }
+
     if ( $content ) {
         $buffer[] = "<div class='accordion__content" . ( ( $open === "true" ) ? " accordion__content--open" : "" ) . "'>";
         $buffer[] = do_shortcode( $content );
         $buffer[] = "</div>";
     }
+
     $buffer[] = "</div>";
     $buffer[] = "</div>";
 
