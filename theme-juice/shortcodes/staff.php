@@ -5,7 +5,7 @@
  *
  * @param {String} $content - The actual bio shortcodes
  *
- * @return {Void}
+ * @return {String}
  *
  * @example
  *   ```

@@ -30,7 +30,7 @@ if ( file_exists( $_file = get_template_directory() . "/assets/json/colors.json"
          * @param {String} $atts->$shade (base) - Shade of the color to use
          * @param {String} $content             - The content to color
          *
-         * @return {Void}
+         * @return {String}
          *
          * @example
          *   ```

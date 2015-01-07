@@ -9,6 +9,8 @@
  * @param {String} $atts->align  - Align text inside of column
  * @param {String} $content      - Content of column
  *
+ * @return {String}
+ *
  * @example
  *   ```
  *   [col span='one-third']...[/col]

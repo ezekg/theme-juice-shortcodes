@@ -7,7 +7,7 @@
  * @param {String} $atts->$link - HREF value for the link
  * @param {String} $content     - The button text
  *
- * @return {Void}
+ * @return {String}
  *
  * @example
  *   ```

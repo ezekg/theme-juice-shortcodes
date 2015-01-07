@@ -6,7 +6,7 @@
  * @param {Array}  $atts       - Array containing arguments for shortcode
  * @param {String} $atts->$src - YouTube embed string
  *
- * @return {Void}
+ * @return {String}
  *
  * @example
  *   ```

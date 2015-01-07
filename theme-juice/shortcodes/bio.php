@@ -9,7 +9,7 @@
  * @param {String} $atts->$image - Image to place inside of the bio
  * @param {String} $content      - The actual bio text
  *
- * @return {Void}
+ * @return {String}
  *
  * @example
  *   ```

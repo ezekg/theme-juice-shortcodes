@@ -30,7 +30,7 @@ if ( file_exists( $_file = get_template_directory() . "/assets/json/fonts.json" 
          * @param {String} $atts->$style  (normal) - Style of the font
          * @param {String} $content                - The content to apply font to
          *
-         * @return {Void}
+         * @return {String}
          *
          * @example
          *   ```

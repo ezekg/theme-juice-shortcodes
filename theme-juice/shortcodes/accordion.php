@@ -8,7 +8,7 @@
  * @param {String} $atts->$open (false) - Open accordion on start
  * @param {String} $content             - The actual content to put into accordion
  *
- * @return {Void}
+ * @return {String}
  *
  * @example
  *   ```
