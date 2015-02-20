@@ -17,11 +17,16 @@
 add_shortcode( "button", function( $atts, $content = null ) {
     extract( shortcode_atts( array(
         "link" => '#',
+        "size" => null,
     ), $atts, "button" ) );
 
     $buffer = array();
 
-    $buffer[] = "<a class='button' href='$link'>";
+    if ( $size ) {
+        $size = "button--$size";
+    }
+
+    $buffer[] = "<a class='button $size' href='$link'>";
     $buffer[] = do_shortcode( $content );
     $buffer[] = "</a>";
 

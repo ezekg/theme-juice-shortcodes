@@ -29,20 +29,18 @@ add_shortcode( "bio", function( $atts, $content = null ) {
 
     if ( $image ) {
         $buffer[] = "<div class='bio__thumb'>";
-        $buffer[] = "<div class='bio__thumb__overflow'>";
         $buffer[] = "<img src='$image'>";
-        $buffer[] = "</div>";
         $buffer[] = "</div>";
     }
 
     $buffer[] = "<div class='bio__content'>";
 
     if ( $name ) {
-        $buffer[] = "<p>Name: $name</p>";
+        $buffer[] = "<h5 class='bio__content__name'>$name</h5>";
     }
 
     if ( $role ) {
-        $buffer[] = "<p>Role: $role</p>";
+        $buffer[] = "<p class='bio__content__role'><strong>$role</strong></p>";
     }
 
     if ( $content ) {
@@ -50,7 +48,6 @@ add_shortcode( "bio", function( $atts, $content = null ) {
     }
 
     $buffer[] = "</div>";
-
     $buffer[] = "</div>";
 
     return implode( "", $buffer );
