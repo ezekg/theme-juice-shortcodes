@@ -5,13 +5,14 @@
  *
  * @param {Array}  $atts        - Array containing arguments for shortcode
  * @param {String} $atts->$link - HREF value for the link
+ * @param {String} $atts->$size - Size of the button
  * @param {String} $content     - The button text
  *
  * @return {String}
  *
  * @example
  *   ```
- *   [button link='url/to/link/to']...[/button]
+ *   [button size='small' link='url/to/link/to']...[/button]
  *   ```
  */
 add_shortcode( "button", function( $atts, $content = null ) {
