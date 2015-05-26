@@ -5,13 +5,13 @@ namespace ThemeJuice\Packages;
 class Shortcodes implements PackageInterface {
 
   /**
-  * @var {Array}
-  */
+   * @var {Array}
+   */
   public $shortcodes;
 
   /**
-  * @var {Array}
-  */
+   * @var {Array}
+   */
   private $defaults = array(
     "accordion" => true,
     "colors" => true,
@@ -25,10 +25,10 @@ class Shortcodes implements PackageInterface {
   );
 
   /**
-  * Constructor
-  *
-  * @param {Array} $options - Array that contains functions
-  */
+   * Constructor
+   *
+   * @param {Array} $options - Array that contains functions
+   */
   public function __construct( $options = array() ) {
 
     // Merge new options with defaults
@@ -51,12 +51,12 @@ class Shortcodes implements PackageInterface {
   }
 
   /**
-  * Register shortcode
-  *
-  * @param {String} $shortcode - The name of the shortcode to register
-  *
-  * @return {Void}
-  */
+   * Register shortcode
+   *
+   * @param {String} $shortcode - The name of the shortcode to register
+   *
+   * @return {Void}
+   */
   public function register_shortcode( $shortcode ) {
 
     // Make sure shortcode doesn't already exist, and that the file itself
