@@ -17,17 +17,17 @@
  *   ```
  */
 add_shortcode( "col", function( $atts, $content = null ) {
-    extract( shortcode_atts( array(
-        "span" => "full",
-        "center" => false,
-        "align" => false
-    ), $atts, "col" ) );
+  extract( shortcode_atts( array(
+    "span" => "full",
+    "center" => false,
+    "align" => false
+  ), $atts, "col" ) );
 
-    $buffer = array();
+  $buffer = array();
 
-    $buffer[] = "<div class='column__span--$span" . ( $center ? "--center" : "" ) . ( $align ? " text-align--$align" : "" ) ."'>";
-    $buffer[] = do_shortcode( $content );
-    $buffer[] = "</div>";
+  $buffer[] = "<div class='column__span--{$span}" . ( $center ? "--center" : "" ) . ( $align ? " text-align--{$align}" : "" ) ."'>";
+  $buffer[] = do_shortcode( $content );
+  $buffer[] = "</div>";
 
-    return implode( "", $buffer );
+  return implode( "", $buffer );
 });
