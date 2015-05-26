@@ -27,7 +27,7 @@ class Shortcodes implements PackageInterface {
   /**
    * Constructor
    *
-   * @param {Array} $options - Array that contains functions
+   * @param {Array} $options
    */
   public function __construct( $options = array() ) {
 
