@@ -8,6 +8,7 @@ This is a [Theme Juice](https://github.com/ezekg/theme-juice-starter) package co
 * [`[accordion]`](https://github.com/ezekg/theme-juice-shortcodes/blob/master/ThemeJuice/Packages/lib/accordion.php)
 * [`[bio]`](https://github.com/ezekg/theme-juice-shortcodes/blob/master/ThemeJuice/Packages/lib/bio.php)
 * [`[button]`](https://github.com/ezekg/theme-juice-shortcodes/blob/master/ThemeJuice/Packages/lib/button.php)
+* [`[row]`](https://github.com/ezekg/theme-juice-shortcodes/blob/master/ThemeJuice/Packages/lib/row.php)
 * [`[col]`](https://github.com/ezekg/theme-juice-shortcodes/blob/master/ThemeJuice/Packages/lib/col.php)
 * [`[map]`](https://github.com/ezekg/theme-juice-shortcodes/blob/master/ThemeJuice/Packages/lib/map.php)
 * [`[staff]`](https://github.com/ezekg/theme-juice-shortcodes/blob/master/ThemeJuice/Packages/lib/staff.php)

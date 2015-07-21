@@ -22,6 +22,7 @@ class Shortcodes implements PackageInterface {
     "bio" => true,
     "col" => true,
     "map" => true,
+    "row" => true,
   );
 
   /**
