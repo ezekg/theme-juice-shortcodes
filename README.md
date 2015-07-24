@@ -1,4 +1,5 @@
 # Theme Juice Shortcodes
+[![Packagist](https://img.shields.io/packagist/v/theme-juice/theme-juice-shortcodes.svg)](https://packagist.org/packages/theme-juice/theme-juice-shortcodes)
 
 This is a [Theme Juice](https://github.com/ezekg/theme-juice-starter) package containing commonly-used WordPress shortcodes. The majority of these are _unstyled_, and simply output raw HTML. If any of these are implemented within an application, they will need to be styled appropriately. Below you will find a list of all the shortcodes that are included within the package:
 
